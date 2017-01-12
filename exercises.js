@@ -168,6 +168,19 @@ printProcessedOrders(arrayOfObjects);
         Go ahead and create some more objects and pass them to this function. Have fun with it.
 */
 
+var sumObj = {
+	a: 2,
+	b: 3,
+	result: 0
+};
+
+
+function objectAddition(object) {
+	object.result = object.a + object.b;
+	return object;
+}
+
+console.log(objectAddition(sumObj));
 
 /*
     # Print sum function and add as new key-value
