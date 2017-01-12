@@ -211,6 +211,15 @@ console.log(printObj(sumObj));
         Invoke your function and pass in your object (which should be `plainBox`), store the result to a variable named plainBoxResult and use `console.log` to inspect your results.
  */
 
+ function putInPlainBox(object) {
+ 	for (var i = 0;i<10;i++) {
+ 		object.contents.push(Math.round(Math.random() * 100));
+ 	}
+ 	return object;
+ }
+
+var plainBoxResult = putInPlainBox(plainBox);
+console.log(plainBoxResult);
 
 /*
     # Detecting transmission
