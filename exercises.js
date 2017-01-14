@@ -213,7 +213,7 @@ console.log(printObj(sumObj));
 
  function putInPlainBox(object) {
  	for (var i = 0;i<10;i++) {
- 		object.contents.push(Math.round(Math.random() * 100));
+ 		object.contents.push(Math.floor(Math.random() * 100)+1);
  	}
  	return object;
  }
