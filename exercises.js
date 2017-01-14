@@ -35,7 +35,7 @@ console.log(plainBox);
  var stockCar = {
     model: "Ford",
     year: "2002",
-    automaticTransmission: true,
+    automaticTransmission: false,
     driver: null,
     passengers: [],
  };
@@ -231,12 +231,7 @@ console.log(plainBoxResult);
  */
 
 function detectingTransmission(object) {
-	if (object.automaticTransmission) {
-		return "This car has an automatic transmission.";
-	}
-	else {
-		return "This car does not have an automatic transmission.";
-	}
+	return object.automaticTransmission ? "This car has an automatic transmission." : "This car does not have an automatic tranmission.";
 }
 
 console.log(detectingTransmission(stockCar));
